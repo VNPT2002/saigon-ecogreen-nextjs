@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://totalfeeling.com/totalfeeling-api/layout/'),
+  metadataBase: new URL('https://totalfeeling.com'),
   title: {
     default: "Chợ vùng cao",
     template: "%s | Chợ vùng cao",
