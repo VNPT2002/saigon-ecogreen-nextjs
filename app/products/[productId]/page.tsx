@@ -18,39 +18,41 @@ export const generateMetadata = async ({
     title: `Product - ${title}`,
     description: `Mô tả sản phẩm - ${title}`,
     keywords: `sản phẩm, ${title}`,
+    
     openGraph: {
       type: "website",
       title: `Product - ${title}`,
-      description: `Mô tả sản phẩm - ${title}`, 
+      description: `Mô tả sản phẩm - ${title}`,
+      url: `https://saigon-ecogreen.vercel.app/products/${productId}`,
       images: [
-        { url: `https://totalfeeling.com/totalfeeling-api/layout/thumbs/sanphamchuluc/${productId}.png`,
+        {
+          url: `https://totalfeeling.com/totalfeeling-api/layout/thumbs/sanphamchuluc/${productId}.png`,
           width: 1200,
           height: 630,
           alt: `Product - ${title}`,
-       },
+        },
 
       ],
     },
     twitter: {
       title: `Product - ${title}`,
       description: `Mô tả sản phẩm - ${title}`,
+      
       images: [
-        { url: `https://totalfeeling.com/totalfeeling-api/layout/thumbs/sanphamchuluc/${productId}.png`,
+        {
+          url: `https://totalfeeling.com/totalfeeling-api/layout/thumbs/sanphamchuluc/${productId}.png`,
           width: 1200,
           height: 630,
           alt: `Product - ${title}`,
         },
       ],
-    },
-    alternates: {
-      canonical: `https://totalfeeling.com/products/${productId}`,
-    },
+    },    
     robots: {
       index: true,
       follow: true,
     },
     metadataBase: new URL('https://totalfeeling.com'),
-    
+
   };
 };
 
