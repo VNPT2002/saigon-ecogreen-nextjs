@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://totalfeeling.com'),
+  metadataBase: new URL('https://saigon-ecogreen.vercel.app'),
   title: {
     default: "Chợ vùng cao",
     template: "%s | Chợ vùng cao",
