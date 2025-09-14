@@ -4,12 +4,13 @@ import React from "react";
 import logo from "@/images/logo.png";
 import menusvg from "@/images/menu.svg";
 import Container from "./Container";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="w-full bg-darkBlue py-4 border-b border-b-darkBlue">
       <Container className="flex items-center justify-between gap-5">
-        <Image src={logo} alt="logo" className="w-40" priority></Image>
+        <Link href="/"><Image src={logo} alt="logo" className="w-40" priority></Image></Link>
         <Image src={menusvg} alt="logo" className="w-8" priority></Image>
         <Form action="/search" className="flex-1">
           <input
